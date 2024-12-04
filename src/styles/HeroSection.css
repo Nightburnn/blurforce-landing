@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space content and tabs */
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    padding: 0 20px;
+    position: relative;
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: flex-start; /* Align text to the left */
+    position: absolute; /* Allows precise placement */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%) !important; /* Perfectly center the content */
+    text-align: left;
+  }
+  
+  .text-container {
+    display: flex;
+    align-items: center;
+    gap: 70px; /* Space between vertical line and text */
+  }
+  
+  .vertical-line {
+    width: 1px; /* Slimmer line */
+    height: 390px; /* Longer line */
+    background: rgba(252, 252, 252, 0.669);  }
+  
+  .text-content h1 {
+    color: #FFF;
+font-family: "IBM Plex Sans";
+font-size: 59px;
+font-style: normal;
+font-weight: 400;
+line-height: 103%; /* 81.37px */
+letter-spacing: -1.58px;
+margin-bottom: 48px;
+  
+  }
+  
+  .text-content p {
+    color: rgba(252, 252, 252, 0.861); 
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    max-width: 520px; /* Limit paragraph width */
+    
+    margin: 20px 0;
+ 
+  }
+  
+  .hero-button {
+  
+    background-color: transparent;
+border: none;
+    border-radius: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+  }
+  
+  .svg-button {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background: url('../assets/images/button.svg') no-repeat  center;
+    background-size: 100% ;
+        display: flex;
+    justify-content: center;
+margin: 0;
+    align-items: center;
+    
+  }
+  
+  .svg-button span {
+    color: #FFF;
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  
+  
+  .tab-button {
+    flex: 1; /* Ensures tabs take equal width */
+    padding: 15px 0; /* Adjust height as needed */ 
+    background-color: transparent;
+    color: #FFF;
+font-family: "IBM Plex Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    position: relative; /* Needed for pseudo-elements */
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: rgba(255, 255, 255, 0.15); /* Highlight color for active tab */
+    color: white; /* Adjust active text color if needed */
+    position: relative; /* Allows positioning of white border */
+}
+
+/* Add a white top border for active tab */
+.tab-button.active::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Aligns with the top of the button */
+    left: 0;
+    width: 100%; /* Spans full width of the tab */
+    height: 3px; /* Thickness of the white border */
+    background-color: white;
+}
+
+/* Hover effect for inactive tabs */
+.tab-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Container styles for proper alignment */
+.hero-tabs {
+    display: flex;
+    justify-content: space-around; /* Spread tabs equally */
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0; /* Remove padding for seamless alignment */
+    position: absolute;
+    bottom: 0; /* Stick tabs to the bottom of the section */
+    height: 60px; /* Ensure consistent height */
+ overflow: hidden;
+}
+
+
+
+  /*
+   max-width: 1200px; 
+   margin: 0 auto; 
+   */
